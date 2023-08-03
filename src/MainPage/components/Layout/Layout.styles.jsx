@@ -1,11 +1,16 @@
 import { styled } from '@mui/system';
-import { Toolbar, Paper } from '@mui/material';
+import { AppBar, Box, Typography } from '@mui/material';
 
-export const HeaderContainer = styled(Paper)(({ theme }) => ({
-    padding: theme.spacing(1),
+export const MainContainer = styled(Box)(() => ({
+    display: 'flex',
 }));
 
-export const Header = styled(Toolbar)(({ theme }) => ({
+export const Header = styled(AppBar)(({ theme }) => ({
     alignContent: 'space-evenly',
     padding: theme.spacing(1),
+    backgroundColor: theme.palette.grey[500],
+}));
+
+export const TestContent = styled(Typography)(({ theme }) => ({
+    color: theme.palette.primary.light,
 }));
