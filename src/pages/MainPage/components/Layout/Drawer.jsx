@@ -8,8 +8,7 @@ export const MyDrawer = () => {
         setDrawerOpen(!isDrawerOpen);
     };
     return (
-        <React.Fragment>
-            {/* Add a button or any other element to toggle the drawer */}
+        <>
             <button onClick={toggleDrawer}>Toggle Drawer</button>
             <Drawer anchor='left' open={isDrawerOpen} onClose={toggleDrawer}>
                 <List>
@@ -23,6 +22,6 @@ export const MyDrawer = () => {
                     </ListItem>
                 </List>
             </Drawer>
-        </React.Fragment>
+        </>
     );
 };
